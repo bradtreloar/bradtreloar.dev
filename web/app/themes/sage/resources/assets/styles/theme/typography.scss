@@ -1,0 +1,7 @@
+
+main {
+  a:not(.button) {
+    text-decoration: none !important;
+    border-bottom: dotted 1px $primary;
+  }
+}
