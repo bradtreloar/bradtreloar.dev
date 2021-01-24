@@ -2,7 +2,7 @@
 
 namespace App;
 
-use App\NavMenus\BootstrapNavwalker;
+use App\NavMenus\Navwalker;
 use Roots\Sage\Container;
 use Roots\Sage\Assets\JsonManifest;
 use Roots\Sage\Template\Blade;
@@ -138,9 +138,9 @@ add_action('after_setup_theme', function () {
 add_action(
     'wp_nav_menu_args',
     function ($args) {
-        $walker = new BootstrapNavwalker();
+        $walker = new Navwalker();
         return [
-        'walker' => $walker
+            'walker' => $walker
         ] + $args;
     }
 );

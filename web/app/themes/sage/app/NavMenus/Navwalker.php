@@ -6,9 +6,9 @@ namespace App\NavMenus;
 use Walker_Nav_Menu;
 
 /**
- * BootstrapNavwalker class.
+ * Navwalker class.
  */
-class BootstrapNavwalker extends Walker_Nav_Menu
+class Navwalker extends Walker_Nav_Menu
 {
 
     /**
@@ -182,7 +182,7 @@ class BootstrapNavwalker extends Walker_Nav_Menu
             if ($depth > 0) {
                 $atts['class'] = 'dropdown-item';
             } else {
-                $atts['class'] = 'nav-link';
+                $atts['class'] = 'nav-link px-0 py-1';
             }
         }
 
