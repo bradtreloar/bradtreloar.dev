@@ -3,6 +3,7 @@
 
   @include media-breakpoint-up(lg) {
     width: $navbar-width;
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
   }
 }

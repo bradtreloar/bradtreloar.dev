@@ -5,10 +5,10 @@
     @php do_action('get_header') @endphp
     @include('partials.svg')
     <div class="d-lg-flex flex-row-reverse">
-      <div class="navbar-wrapper">
+      <div class="navbar-wrapper bg-white">
         @include('partials.header')
       </div>
-      <div class="flex-grow-1" role="document">
+      <div class="flex-grow-1 pb-5" role="document">
         <div class="container-md">
           <main class="main">
             @yield('content')
@@ -18,7 +18,7 @@
               @include('partials.sidebar')
             </aside>
           @endif
-      </div>
+        </div>
       </div>
     </div>
     @php do_action('get_footer') @endphp
