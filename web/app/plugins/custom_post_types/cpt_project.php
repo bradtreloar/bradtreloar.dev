@@ -10,8 +10,17 @@ add_action('init', function () {
                 'name' => __('Projects', 'textdomain'),
                 'singular_name' => __('Project', 'textdomain'),
             ],
-            'public'      => true,
+            'public' => true,
+            'show_in_rest' => true,
             'has_archive' => true,
+            'rewrite' => [
+                'slug' => 'projects'
+            ],
+            'supports' => [
+                'title',
+                'editor',
+                'thumbnail',
+            ],
         ],
     );
 });
