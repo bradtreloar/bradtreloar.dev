@@ -19,3 +19,9 @@
     max-width: map-get($container-max-widths, "lg");
   }
 }
+
+.entry-summary {
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
